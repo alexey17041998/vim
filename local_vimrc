@@ -1,0 +1,17 @@
+set number							"Номера строк
+set hlsearch							"Подсветка результата поиска
+set incsearch							"Инкрементальный поиск
+syntax on							"Подсветка синтаксиса
+call plug#begin('~/.vim/plugged')				
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }		"Дерево проэкта
+Plug 'morhetz/gruvbox'						"Цветовая схема
+Plug 'ycm-core/YouCompleteMe'					"Автодополнение, необходимо собрать
+
+call plug#end()							
+
+colorscheme gruvbox						"Выбор цветовой схемы
+set background=dark
+								"Горячие клавиши
+
+map <C-n> :NERDTreeToggle<CR>					"Быстрый вызов NERDTree
